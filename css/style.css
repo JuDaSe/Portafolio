@@ -1,0 +1,224 @@
+
+:root {
+    --color-bg-dark: #34312D;
+    --color-text-light: #F3F3F4;
+    --color-accent: #7E7F83;
+    --color-gray-bg: #f3f3f48e;
+  }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0;
+}
+
+.main-content {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Modulos personalizados*/
+.color-primary{
+    background-color: var(--color-bg-dark);
+}
+
+.custom-bg-primary{
+    background-color: var(--color-accent);
+}
+
+.custom-bg-secundary{
+    background-color: var(--color-gray-bg);
+}
+
+p, h2, h1, ul{
+    color: var(--color-text-light);
+}
+
+.m-01{
+    margin: .1em !important;
+}
+
+.m-1em{
+    margin: 1em;
+}
+
+.w-2em{
+    width: 2em;
+}
+
+.w-3em{
+    width: 3em;
+}
+
+.h-5em{
+    height: 5.5em;
+    border-radius: 0em 1.5em 0em 1.5em;
+}
+
+.m-03{
+    margin: .3em;
+}
+
+.font-family_Inter{
+    font-family: "Inter", serif;
+}
+
+.important{
+    color: #D9C5B2;
+}
+
+hr{
+    height: 1px;
+    width: 5em;
+    background-color: #34312D;
+}
+
+p{
+    margin-top: 1em;
+    width: 50%;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+h2{
+    font-weight: 700;
+}
+
+.top-2em {
+    top: 2em !important;
+ }
+
+
+  .cursor{
+    cursor: pointer;
+    position: center
+}
+/* ---------------------------------------------------- */
+
+.perfil{
+    background-image: url(/img/Perfil.webp);
+    background-size: cover;
+    background-position: -1.5em .06em;
+    width: 14em;
+    height: 14em;
+    border-radius: 10em;
+}
+
+li{   
+    position: relative;
+    margin: 1em;
+    top: 1.3em;
+    list-style: none;
+    font-family: "Jersey 25", serif;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+#textImporant{
+    position: relative;
+    opacity: 0; 
+    left: -100%; 
+    transition: all 0.5s ease-out; 
+}
+
+.line-attr{
+    text-decoration: underline;
+    text-decoration-color: #34312D;
+    text-underline-offset: .2em;
+}
+
+/* Animaciones */
+
+#languageInfo::before{
+    opacity: 0;
+    width: 1em;
+}
+
+.animation-span_name:hover{
+    color:#7E7F83;
+    cursor:grab;
+}
+
+.active{
+    color:#7E7F83;
+    font-weight: bold;
+}
+
+.scale-hover:hover {
+    transform: scale(1.5);
+}
+
+.btn_li:hover{
+    color: #D9C5B2;
+    cursor: pointer;
+}
+
+
+/* ------------------ */
+
+
+@media (min-height: 465px){
+
+    p{
+        width: 75%;
+    }
+  }
+/* Media queries */
+
+
+/* CV page */
+
+.curriculum{
+    display: block;
+    margin: 5% auto;
+    width: 10em;
+}
+
+.curriculum:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+
+/* project pages */
+
+#textAnimation{
+    opacity: 0;
+}
+
+.card-text{
+    color: #d4d2ce;
+    width: 90%;
+}
+
+.card-title{
+    font-size: 1.5em;
+    font-family: "Inter", serif;
+    color:#d4d2ce;
+}
+
+.projectImages{
+    margin: 2% auto;
+    width: 25em;
+}
+
+.card-body > a {
+    color: #969594;
+    text-decoration: underline;
+}
+
+.card-body > a:hover {
+    color:#d4d2ce;
+}
+
+/*.box-tech_info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4em;
+    justify-content: center;
+}
