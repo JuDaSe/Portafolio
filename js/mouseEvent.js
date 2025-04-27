@@ -1,3 +1,4 @@
+
 let mediaQuerySmall = window.matchMedia("(max-width: 600px)");
 let mediaQueryLarge = window.matchMedia("(max-width: 601px)");
 const languageContent = document.querySelectorAll(".languageInfo");
@@ -34,10 +35,7 @@ const languageContent = document.querySelectorAll(".languageInfo");
                         break;
                     }
                 }
-            });
-    
-            
-    
+            });            
             image.addEventListener('mouseout', () => {
                 const textElement = image.parentElement.querySelector("p");
                 if (textElement) {
@@ -79,10 +77,7 @@ const languageContent = document.querySelectorAll(".languageInfo");
                         break;
                     }
                 }
-            });
-    
-            
-    
+            });   
             image.addEventListener('mouseout', () => {
                 const textElement = image.parentElement.querySelector("p");
                 if (textElement) {
@@ -90,9 +85,35 @@ const languageContent = document.querySelectorAll(".languageInfo");
                 }
             });
         });
-
     }
 
-
-
+    const espacio = document.getElementById('contenedor');
+    const tam = espacio.getBoundingClientRect();
+    const foto = document.getElementById("fotoPerfil");
+    const photoPosition = foto.getBoundingClientRect();
     
+
+    for (let i = 0; i < 100; i++) {
+        const star = document.createElement('span');
+        star.classList.add('estrella');
+        star.style.position = 'absolute';
+        star.style.top = Math.random() * tam.height + 'px';
+        star.style.left = Math.random() * tam.width + 'px';
+        espacio.appendChild(star);
+
+        const tamStar = star.getBoundingClientRect();
+        if((tamStar.bottom > photoPosition.top && tamStar.top < photoPosition.bottom &&
+            tamStar.right > photoPosition.left && tamStar.left < photoPosition.right)){
+            star.style.opacity = "0";
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function(){
+        const estrellas = document.querySelectorAll('.estrella');
+
+        estrellas.forEach(star => {
+            star.style.boxShadow = "0px 0px 10px white";
+        });
+    })
+
+

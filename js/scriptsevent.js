@@ -1,3 +1,4 @@
+document.body.style.overflowX = 'hidden';
 $(document).ready(function () {
     $(window).scroll(function () {
         let window_y = $(window).scrollTop();  

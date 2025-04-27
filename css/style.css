@@ -220,3 +220,14 @@ li{
 .card-body > a:hover {
     color:#d4d2ce;
 }
+
+/* Star */
+
+   .estrella{
+    position: relative;
+    width: .2em;
+    height: .2em;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 40px;
+}
