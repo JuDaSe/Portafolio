@@ -94,6 +94,11 @@ h2{
     top: 2em !important;
  }
 
+ img{
+    width: 17rem;
+    padding: .3em;
+ }
+
 
   .cursor{
     cursor: pointer;
@@ -214,11 +219,4 @@ li{
 
 .card-body > a:hover {
     color:#d4d2ce;
-}
-
-/*.box-tech_info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.4em;
-    justify-content: center;
 }

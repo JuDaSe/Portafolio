@@ -9,10 +9,6 @@ $(document).ready(function () {
             
             let scroll_critical = textImportant.offsetTop - $(window).height() + 20; 
 
-            
-            console.log(window_y, scroll_critical);
-
-            
             if (window_y >= scroll_critical) {
                 
                 textImportant.style.animationDuration = "2s";  
